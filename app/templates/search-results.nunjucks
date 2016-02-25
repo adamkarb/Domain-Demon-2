@@ -1,0 +1,37 @@
+<ul>
+
+    {% if iterator.domain_name %}
+        <li class="result-header">Results for {{iterator.domain_name}}</li>
+    {% endif %}
+
+    {% if iterator.registrant_name %}
+        <li>
+            Registrant Name: <span>{{iterator.registrant_name}}</span>
+        </li>
+    {% endif %}
+
+    {% if iterator.registrant_email %}
+        <li>
+            Registrant Email: <a href="mailto:{{iterator.registrant_email}}"><span class="values">{{iterator.registrant_email}}</span></a>
+        </li>
+    {% endif %}
+
+    {% if iterator.registrant_phone %}
+        <li>
+            Registrant Phone: <span class="values">{{iterator.registrant_phone}}</span>
+        </li>
+    {% endif %}
+
+    {% if iterator.registrant_city %}
+        <li>
+            Registrant City: <span class="values">{{iterator.registrant_city}}</span>
+        </li>
+    {% endif %}
+
+    {% if iterator.registrant_street %}
+        <li>
+            Registrant Street: <span class="values">{{iterator.registrant_street}}</span>
+        </li>
+    {% endif %}
+
+</ul>

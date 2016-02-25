@@ -33,12 +33,12 @@ app.on('activate', function() {
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 800,
-        height: 800
+        width: 600,
+        height: 600
     });
 
     // and load the index.html of the app.
-    mainWindow.loadURL('file://' + ROOT_DIR + '/index.html');
+    mainWindow.loadURL('file://' + ROOT_DIR + '/app/index.html');
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();

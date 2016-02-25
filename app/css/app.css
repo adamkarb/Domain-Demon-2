@@ -1,0 +1,94 @@
+* {
+    outline: none !important;
+}
+
+.body-font {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+body {
+    background-color: #fff;
+}
+
+.input {
+    font-size: 1.4em;
+    font-weight: 200;
+}
+
+.title {
+    color: rgb(22,155,255);
+    font-family: Helvetica Neue;
+    font-weight: 100;
+    font-size: 3em;
+}
+
+
+button {
+    font-family: Helvetica Neue !important;
+    font-weight: 200 !important;
+    font-size: 2em;
+}
+
+#results {
+    margin-top: 10px;
+    padding: 1em;
+    line-height: 2em;
+    max-height: 600px;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    overflow-y: auto;
+}
+
+#domain {
+    height: 2em;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.result-header {
+    font-size: 1.4em;
+}
+
+li {
+    list-style: none;
+}
+
+.values {
+    color: rgb(22,155,255);
+    font-size: 1.1em;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+@-webkit-keyframes load {
+    from {
+        color: #d7d7d7;
+    }
+    to {
+        color: rgb(22,155,255);
+    }
+}
+
+.loading {
+    color: #999;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20vh;
+    -webkit-animation: load .6s infinite alternate ease-in-out;
+}
