@@ -123,17 +123,9 @@
     function trimDomain(domain) {
 
         // make sure no whitespace plz
-        domain = domain.trim();
-
         // remove any common website prefix
-        domain = domain.replace(/^(?:http(?:s)?:\/\/)?(?:www(?:[0-9]+)?\.)?/gi, '');
-
         // remove anything after trailing slash, including slash
-        domain = domain.replace(/\/.*$/, '');
-
-        domain = domain.replace(/\s+.*$/gi, '');
-
-        return domain;
+        return domain.trim().replace(/^(?:http(?:s)?:\/\/)?(?:www(?:[0-9]+)?\.)?/gi, '').replace(/\/.*$/, '').replace(/\s+.*$/gi, '');;
 
     }
 
