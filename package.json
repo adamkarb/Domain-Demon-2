@@ -9,7 +9,7 @@
   "author": "adamkarb",
   "license": "GPL-3.0",
   "dependencies": {
-    "electron": "0.4.1",
+    "electron": "9.1.0",
     "jquery": "2.2.1",
     "node-whois": "2.1.3",
     "nunjucks": "2.3.0"
